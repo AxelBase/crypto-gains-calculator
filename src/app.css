@@ -1,0 +1,77 @@
+/* app.css */
+:root {
+  --sapphire: #1D1E33;
+  --sapphire-light: #2a2c4a;
+  --accent-blue: #3d4185;
+  --text-light: #ffffff;
+  --glass: rgba(255, 255, 255, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--sapphire);
+  padding-bottom: 80px; /* Space for fixed footer */
+  scroll-behavior: smooth;
+}
+
+/* Bubbly Buttons & Inputs */
+.btn, .form-control, .form-select, .card {
+  border-radius: 16px !important;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--sapphire) !important;
+  border: none !important;
+  padding: 10px 24px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-blue) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(29, 30, 51, 0.2);
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: var(--sapphire) !important;
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--text-light) !important;
+  transform: scale(1.05);
+}
+
+/* Table Styling */
+.table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: none;
+}
+
+.table thead {
+  background-color: var(--sapphire);
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
