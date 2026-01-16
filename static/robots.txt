@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://axelbase.github.io/crypto-gains-calculator/sitemap.xml
+Sitemap: https://crypto-gains-calculator.vercel.app/sitemap.xml
